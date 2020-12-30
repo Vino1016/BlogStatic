@@ -26,6 +26,12 @@
             $(this).attr({ 'data-mark': "false" });
         }
     });
+
+    $('#toWelcome').click(function () {
+        let valOfScroll =$('#welcome').offset().top;
+        //让滚轴从当前位置的scroll在600毫秒内偏移到位置为valOfScroll。
+        $("html,body").animate({scrollTop: valOfScroll}, 400)
+    });
     function siteTime() {
         var seconds = 1000;
         var minutes = seconds * 60;

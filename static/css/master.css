@@ -36,7 +36,7 @@ body,html{font:14px/1.5 "Helvetica neue",Helvetica,Tahoma,"lantinghei sc","Micro
 .phone-menu i:nth-of-type(1){top:18px}
 .phone-menu i:nth-of-type(2){top:25px}
 .phone-menu i:nth-of-type(3){top:32px}
-.grid-footer{background-image: linear-gradient(to right, #35346c 0%, #8e1b1b 100%);font-size:14px;padding:20px 0 0 0;position:relative;zoom:1;clear:both;line-height:20px;margin-top:40px;overflow:hidden}
+.grid-footer{z-index:100;background: rgba(234,234,234,0);font-size:14px;padding:20px 0 0 0;position:relative;zoom:1;clear:both;line-height:20px;margin-top:40px;overflow:hidden}
 .copyright{padding:10px 0 10px 0}
 .copyright .info{position:relative;text-align:center}
 .copyright p{color:#565755;font-size:13px}
@@ -46,7 +46,8 @@ body,html{font:14px/1.5 "Helvetica neue",Helvetica,Tahoma,"lantinghei sc","Micro
 .copyright .contact .qq:hover{background-color:#d25744}
 .copyright .contact .email:hover{background-color:#668f20}
 .copyright .contact .weixin:hover{background-color:#06a2c9}
-.copyright2{padding:12px 0;background:#1D1D21}
+.copyright2{padding:12px 0;background: #f8f4f8
+}
 .copyright2 .text-center{text-align:center}
 .copyright2 p{color:#bbb;font-size:14px}
 .doc-container{position:relative;padding-top:95px;-webkit-transition:all .2s;transition:all .2s;min-height:100vh;}

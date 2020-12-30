@@ -49,5 +49,12 @@ article.Init = function ($) {
         $('.blog-mask').removeClass('maskIn').addClass('maskOut').removeClass('layui-show');
         $('.article-category').removeClass('categoryIn').addClass('categoryOut');
     }
+    $(window).scroll(function () {
+        let scroll = $(window).scrollTop();
+        if (scroll > 1250)
+            $('#categoryandsearch').addClass('fixed');
+        else
+            $('#categoryandsearch').removeClass('fixed');
+    });
 };
 
