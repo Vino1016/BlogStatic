@@ -216,18 +216,19 @@ blockquote {
     tab-size: 4;
 }
 
-pre::before {
-    content: ' ';
-    background: #fc625d;
-    box-shadow: 23px 0 #fdbc40, 45px 0 #35cd4b;
-    border-radius: 50%;
-    margin-top: -1.9rem;
+.code-area::after {
+    content: " ";
     position: absolute;
-    left: 60px;
-    height: 12px;
+    border-radius: 50%;
+    background: #ff5f56;
     width: 12px;
+    height: 12px;
+    top: 0;
+    left: 12px;
+    margin-top: 12px;
+    -webkit-box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
+    box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
 }
-
 pre {
     padding: 2.5rem 1.5rem 1.5rem 1.5rem !important;
     margin: 1rem 0 !important;
