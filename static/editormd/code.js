@@ -18,23 +18,6 @@ $(function () {
 // 代码块功能依赖
 $(function () {
     $('pre').wrap('<div class="code-area" style="position: relative"></div>');
-    var $highlight_lang = $('<div class="code_lang" title="代码语言"></div>');
-
-
-
-    $('pre').before($highlight_lang);
-    $('li > code').each(function () {
-        var code_language = $(this).attr('class');
-        if (!code_language) {
-            return true;
-        };
-        var lang_name = code_language.replace("lang-", "").trim();
-
-        // 首字母大写
-        lang_name = lang_name.toUpperCase();
-
-        $('pre').siblings(".code_lang").text(lang_name);
-    });
 
     var $code_expand = $('<i class="fas fa-angle-double-up code-expand" title="代码折叠" aria-hidden="true"></i>');
 
