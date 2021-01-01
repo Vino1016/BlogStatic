@@ -232,14 +232,18 @@ blockquote {
 pre {
     padding: 2.5rem 1.5rem 1.5rem 1.5rem !important;
     margin: 1rem 0 !important;
-    background: #283136;
+    background: rgb(40,49,54);
     overflow: auto;
     border-radius: 0.35rem;
     tab-size: 4;
-    box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15),
-    0 5px 15px rgba(0, 0, 0, .07),
-    0 2px 5px -5px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, .12);
+    transition: all .3s
 }
+
+pre:hover{
+    box-shadow: 0 0 8px 3px rgba(0, 0, 0, .12)
+}
+
 
 
 code {
@@ -309,13 +313,13 @@ pre code {
     background-color: #283136;
 }
 
-pre[class*="language-"] {
+pre[class*="lang-"] {
     padding: 1.2em;
     margin: .5em 0;
 }
 
-code[class*="language-"],
-pre[class*="language-"] {
+code[class*="lang-"],
+pre[class*="lang-"] {
     color: #e8eaf6;
     white-space: pre-wrap !important;
 }
@@ -483,7 +487,7 @@ mark {
 .card {
     border-radius: 10px;
     box-shadow:  0 1px 20px -6px rgba(0,0,0,.5) !important;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s;
 }
 
 .card:hover{
