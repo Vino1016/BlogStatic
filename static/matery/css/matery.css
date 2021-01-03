@@ -39,6 +39,7 @@ body {
     color: #34495e;
     overflow-x: hidden;
     overflow-y: auto;
+    font-family: KaiTi, serif;
 }
 
 /*h1 {
@@ -1343,6 +1344,28 @@ article .article-tags .chip {
 }
 
 /*文章详情样式*/
+@-webkit-keyframes rightan
+{
+    from
+    {
+        bottom: 0%;
+        opacity: 0;
+    }
+    to
+    {
+        bottom: 3%;
+        opacity: 1;
+    }
+}
+.rightan
+{
+    animation-duration: 2s;
+    -webkit-animation: rightan 1.5s infinite;
+    -webkit-animation-fill-mode: both;
+    bottom: 1px;
+    left: 47.5%;
+    position: absolute;
+}
 #artDetail {
     margin-top: -60px;
 }
