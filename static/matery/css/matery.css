@@ -39,57 +39,10 @@ body {
     color: #34495e;
     overflow-x: hidden;
     overflow-y: auto;
-    font-family: KaiTi, serif;
+    font-family: Monaco, 'Noto Serif SC', serif;
 }
-
-/*h1 {
-    margin: 48px 0 22px -5px;
-    font-size: 2.0rem;
-    font-weight: bold;
-    line-height: 2.0rem;
-}
-
-h2 {
-    margin: 42px 0 18px -5px;
-    font-size: 1.8rem;
-    font-weight: bold;
-    line-height: 1.8rem;
-}
-
-h3 {
-    margin: 38px 0 15px -4px;
-    font-size: 1.6rem;
-    font-weight: bold;
-    line-height: 1.7rem;
-}
-
-h4 {
-    margin: 32px 0 12px -4px;
-    font-size: 1.45rem;
-    font-weight: bold;
-    line-height: 1.45rem;
-}
-
-h5 {
-    margin: 28px 0 8px -4px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    line-height: 1.2rem;
-}
-
-h6 {
-    margin: 22px 0 4px -4px;
-    font-size: 1.1rem;
-    line-height: 1.1rem;
-}*/
 
 /* 让每一级标题更加明显，添加标注 */
-. V-font{
-    font-family: "EB Garamond", Georgia, "Nimbus Roman No9 L", "Noto Serif CJK SC", "Songti SC", "Source Han Serif SC",
-    "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung",
-    "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE",
-    PMingLiU, MingLiU, serif;
-}
 
 h1 {
     font-size: 3rem;
@@ -118,7 +71,7 @@ h1::after {
 
 h1,
 h2 {
-    font-family: "EB Garamond", Georgia, "Nimbus Roman No9 L", "Noto Serif CJK SC", "Songti SC", "Source Han Serif SC", "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif;
+    font-family: Monaco, 'Noto Serif SC', serif;
     font-weight: 800;
     line-height: 3rem;
     text-align: center;
@@ -148,10 +101,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "EB Garamond", Georgia, "Nimbus Roman No9 L", "Noto Serif CJK SC", "Songti SC", "Source Han Serif SC",
-    "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung",
-    "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE",
-    PMingLiU, MingLiU, serif;
+    font-family: Monaco, 'Noto Serif SC', serif;
     font-weight: 600;
     margin: 3rem 0;
     margin-bottom: 1.5rem;
