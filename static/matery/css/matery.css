@@ -71,7 +71,7 @@ h1::after {
 
 h1,
 h2 {
-    font-family: KaiTi, serif;
+    font-family: Georgia, 'Noto Serif SC',serif !important;
     font-weight: 800;
     line-height: 3rem;
     text-align: center;
@@ -101,7 +101,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: KaiTi, serif;
+    font-family: Georgia, 'Noto Serif SC',serif !important;
     font-weight: 600;
     margin: 3rem 0;
     margin-bottom: 1.5rem;
