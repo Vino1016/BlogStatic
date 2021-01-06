@@ -142,7 +142,7 @@ var RENDERER = {
         requestAnimationFrame(this.render);
         this.controlStatus();
         this.context.clearRect(0, 0, this.width, this.height);
-        this.context.fillStyle = '#87CEFA';
+        this.context.fillStyle = 'rgba(135,206,250,0.76)';
 
         for(var i = 0, count = this.fishes.length; i < count; i++){
             this.fishes[i].render(this.context);
