@@ -64,7 +64,7 @@ img.vimg {
 }
 
 #vcomments{
-    font-family: KaiTi, serif;
+    font-family: 'Noto Serif SC', serif !important;
 }
 
 #vcomments p {
