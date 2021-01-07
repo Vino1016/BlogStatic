@@ -42,7 +42,7 @@ img.vimg {
     padding: 0 0 !important;
 }
 .v[data-class=v] .vsys {
-    font-size: .85em !important;
+    font-size: .79em !important;
 }
 .v[data-class=v] .vsys i{
     margin-right: 0.15rem !important;
@@ -174,7 +174,7 @@ table tr:nth-child(2n), thead {
 }
 
 #vcomments p {
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     line-height: 1.5rem;
 }
 
