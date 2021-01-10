@@ -18,7 +18,7 @@ a,img{text-decoration:none;border:none}
 button,input,textarea{outline:0;border:none;font:14px/1.5 "Microsoft YaHei","微软雅黑","Helvetica Neue","Hiragino Sans GB",Helvetica,Tahoma,sans-serif;color:#515250}
 h4{font-size:20px}
 li{list-style:none}
-body,html{font:14px/1.5 "Helvetica neue",Helvetica,Tahoma,"lantinghei sc","Microsoft Yahei",sans-serif;-webkit-font-smoothing:antialiased;-webkit-backface-visibility:hidden;overflow-x:hidden}
+body,html{-webkit-font-smoothing:antialiased;-webkit-backface-visibility:hidden;overflow-x:hidden}
 .gird-header{width:100%;min-height:77px;position:fixed;background-color: rgb(17, 17, 17);z-index:11002;top:0;left:0;border-bottom:1px solid #181817;font-size:14px}
 .container-fixed,.footer-fixed,.header-fixed{width:1280px;margin-left:auto;margin-right:auto;position:relative}
 .header-inner{margin-left:10px;margin-right:10px;position:relative}
@@ -84,4 +84,4 @@ body,html{font:14px/1.5 "Helvetica neue",Helvetica,Tahoma,"lantinghei sc","Micro
 .nav li{float:none;border-bottom:1px solid #e8e9e7}
 .nav li:last-child{border:0}
 }
-@font-face{font-family:BarbaraHand;src:url(../font/barbarahand-webfont.eot);src:url(../font/barbarahand-webfont.eot?#iefix) format('embedded-opentype'),url(../font/barbarahand-webfont.woff2) format('woff2'),url(../font/barbarahand-webfont.woff) format('woff'),url(../font/barbarahand-webfont.ttf) format('truetype'),url(../font/barbarahand-webfont.svg#BarbaraHand) format('svg');font-weight:400;font-style:normal}
+@font-face{font-family:BarbaraHand;src:url(/font/barbarahand-webfont.eot);src:url(/font/barbarahand-webfont.eot?#iefix) format('embedded-opentype'),url(/font/barbarahand-webfont.woff2) format('woff2'),url(/font/barbarahand-webfont.woff) format('woff'),url(/font/barbarahand-webfont.ttf) format('truetype'),url(/font/barbarahand-webfont.svg#BarbaraHand) format('svg');font-weight:400;font-style:normal}

@@ -1109,7 +1109,7 @@ article .card-image:after{
     opacity: 0;
     transform: rotate(45deg);
     position: absolute;
-    top:-10.5%;
+    /*top:-10.5%;*/
     right:-150%;
     z-index: 1;
     transition: all 0.35s ease;
@@ -1152,6 +1152,7 @@ article .card-image .post{
     text-transform: capitalize;
     margin: 0 0 10px;
     display: block;
+    font-family: 'Noto Serif SC', serif;
 }
 article .card-image .icon{
     padding: 0;
@@ -1594,7 +1595,7 @@ thead {
     display: list-item;
     line-height: 1.8rem;
     font-size: 1.3rem;
-    font-family: "EB Garamond", Georgia, "Nimbus Roman No9 L", "Noto Serif CJK SC", "Songti SC", "Source Han Serif SC",
+    font-family: "EB Garamond", Georgia, "Nimbus Roman No9 L", 'Noto Serif SC',"Noto Serif CJK SC", "Songti SC", "Source Han Serif SC",
     "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung",
     "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE",
     PMingLiU, MingLiU, serif;
@@ -2631,5 +2632,5 @@ footer .copy-right {
     position: relative;text-align: center;top: 130px
 }
 .V-icp p{
-    font-family: KaiTi,serif;font-size: 15px
+    font-family: 'Noto Serif SC',serif;font-size: 15px
 }

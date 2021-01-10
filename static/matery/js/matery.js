@@ -135,11 +135,11 @@ $(function () {
             diffMinutes * minutes) / seconds);
         if (startYear == todayYear) {
             document.getElementById("year").innerHTML = todayYear;
-            document.getElementById("sitetime").innerHTML = "🥺 本站已苟延残喘 " + diffDays + " 天 " + diffHours +
+            document.getElementById("sitetime").innerHTML = ":）本站已运行 " + diffDays + " 天 " + diffHours +
                 " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
         } else {
             document.getElementById("year").innerHTML = startYear + " - " + todayYear;
-            document.getElementById("sitetime").innerHTML = "🥺 本站已苟延残喘 " + diffYears + " 年 " + diffDays +
+            document.getElementById("sitetime").innerHTML = ":）本站已运行 " + diffYears + " 年 " + diffDays +
                 " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
         }
     }
