@@ -20,14 +20,6 @@ $(function () {
         fixFooterPosition();
     };
     fixStyles();
-    $(window).scroll(function () {
-        let scroll = $(window).scrollTop();
-        if (scroll > 1300)
-            $('#categoryandsearch').addClass('fixed');
-        else
-            $('#categoryandsearch').removeClass('fixed');
-    });
-
     /*文章内容详情的一些初始化特性*/
     let articleInit = function () {
 

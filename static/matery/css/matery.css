@@ -2645,5 +2645,6 @@ footer .copy-right {
     background: rgba(234,234,234,0);font-size:14px;
     position:relative;zoom:1;clear:both;line-height:20px;overflow:hidden;
     font-family: 'Noto Serif SC', serif;
-    top: 85px;
+    top: 110px;
 }
+.copyright p{color:#565755;font-size:13px}
