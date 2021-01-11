@@ -6,7 +6,6 @@ body,html{-webkit-font-smoothing:antialiased;-webkit-backface-visibility:hidden;
 .gird-header{width:100%;min-height:77px;position:fixed;background-color: rgb(17, 17, 17);z-index:11002;top:0;left:0;border-bottom:1px solid #181817;font-size:14px}
 .container-fixed,.footer-fixed,.header-fixed{width:1280px;margin-left:auto;margin-right:auto;position:relative}
 .header-inner{margin-left:10px;margin-right:10px;position:relative}
-.header-logo{font-family:BarbaraHand;font-size:60px;color: #fcfdfd;text-align:center;position:absolute;left:0;}
 .nav{display:block;position:absolute;right:15%}
 .nav li{display:block;float:left;margin:16px 5px;position:relative}
 .nav li:before{width:0;height:2px;position:absolute;bottom:-11px;left:50%;background-color:#6bc30d;content:"";transition:all .6s;z-index:-1}
@@ -49,15 +48,9 @@ body,html{-webkit-font-smoothing:antialiased;-webkit-backface-visibility:hidden;
 .nav{display:block!important}
 }
 @media screen and (max-width:1366px){.container-fixed,.footer-fixed,.header-fixed{width:90%}
-.phone-menu{display:none}
-.nav{display:block}
+
 }
-@media screen and (max-width:1024px){.header-logo{left:25%;width:50%}
-.nav{position:fixed;top:60px;left:0;right:0}
+@media screen and (max-width:1024px){
 .container-fixed,.footer-fixed,.header-fixed{width:90%}
-.phone-menu{display:block}
-.nav{display:none;width:100%;background:rgba(255,255,255,1)}
-.nav li:before{bottom:0;z-index:10}
-.nav li{float:none;border-bottom:1px solid #e8e9e7}
-.nav li:last-child{border:0}
+
 }

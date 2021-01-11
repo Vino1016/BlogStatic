@@ -32,7 +32,7 @@
         max-width: 1250px;
     }
 }
-
+body,html{-webkit-font-smoothing:antialiased;-webkit-backface-visibility:hidden;overflow-x:hidden}
 body {
     background-color: #eaeaea;
     margin: 0;
@@ -2651,6 +2651,6 @@ footer .copy-right {
     background: rgba(234,234,234,0);font-size:14px;
     position:relative;zoom:1;clear:both;line-height:20px;overflow:hidden;
     font-family: Georgia,'Noto Serif SC', serif;
-    top: 110px;
+    top: 90px;
 }
 .copyright p{color:#565755;font-size:13px}
