@@ -397,14 +397,12 @@ table tr:nth-child(2n), thead {
 }
 .comment-switch .first-comment {
     color: #b9dd5b;
-    vertical-align: -3px;
     font-size: 1.1rem;
     font-family: 'Noto Serif SC', serif;
 }
 
 .comment-switch .second-comment {
     color: #291006;
-    vertical-align: -3px;
     font-size: 1.1rem;
     font-family: 'Noto Serif SC', serif;
 }
