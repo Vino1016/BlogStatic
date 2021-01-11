@@ -2634,9 +2634,14 @@ footer .copy-right {
     position: relative;text-align: center;top: 146px
 }
 .V-icp p{
-    font-family: Georgia,'Noto Serif SC',serif;font-size: 15px
+    font-family: Georgia,'Noto Serif SC',serif;font-size: 15px;
 }
-
+.V-icp a{
+    transition: all 0.7s;
+}
+.V-icp a:hover{
+    color: whitesmoke ;
+}
 .container-fixed,.footer-fixed {width:1280px;margin-left:auto;margin-right:auto;position:relative}
 .copyright{padding:10px 0 10px 0}
 .copyright .info{position:relative;text-align:center}
