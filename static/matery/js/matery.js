@@ -22,7 +22,7 @@ $(function () {
     fixStyles();
     $(window).scroll(function () {
         let scroll = $(window).scrollTop();
-        if (scroll > 1250)
+        if (scroll > 1300)
             $('#categoryandsearch').addClass('fixed');
         else
             $('#categoryandsearch').removeClass('fixed');
