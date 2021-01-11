@@ -200,7 +200,7 @@ pre:hover{
 code {
     padding: 1px 5px;
     top: 13px !important;
-    font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
+    font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace,'Noto Serif SC';
     font-size: 1.05rem;
     color: #e96900;
     background-color: #f8f8f8;
@@ -868,8 +868,10 @@ header .go-back i {
     line-height: 1.2em;
     margin-bottom: 20px;
     position: relative;
-    font-family:BarbaraHand;color: whitesmoke;text-decoration:none;
-    display: inline;top: -30px;left: 160px
+    color: whitesmoke;text-decoration:none;
+    display: inline;top: -15px;left: 220px;
+    font-family: 'Bangers',cursive;
+
 }
 
 .bg-cover .description {
@@ -2634,3 +2636,6 @@ footer .copy-right {
 .V-icp p{
     font-family: 'Noto Serif SC',serif;font-size: 15px
 }
+
+.footer-fixed {width:1280px;margin-left:auto;margin-right:auto;position:relative}
+.copyright{padding:10px 0 10px 0}

@@ -56,7 +56,6 @@ body,html{-webkit-font-smoothing:antialiased;-webkit-backface-visibility:hidden;
 .lo button{margin-top:10px;padding:5px 15px;cursor:pointer}
 .lo .waiting{padding:5px 15px;font-family:FontAwesome;font-style:normal;text-rendering:auto;font-size:20px;display:none}
 .lo .waiting:before{content:"\f110";-webkit-animation:spin 2s infinite linear;animation:spin 2s infinite linear}
-.artcle{transition:animation .3s linear}
 .zoomIn{animation:zoomIn 1s both}
 @keyframes zoomIn{0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}
 50%{opacity:1}
