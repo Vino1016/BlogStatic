@@ -393,7 +393,7 @@ table tr:nth-child(2n), thead {
     padding: .2rem .8rem;
     width: max-content;
     border-radius: 8px;
-    background: #eaeaea;
+    background: #f6f8fa;
 }
 .comment-switch .first-comment {
     color: #b9dd5b;
