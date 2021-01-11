@@ -1316,7 +1316,7 @@ article .article-tags .chip {
     -webkit-animation: rightan 1.5s infinite;
     -webkit-animation-fill-mode: both;
     bottom: 1px;
-    left: 47.5%;
+    left: 50%;
     position: absolute;
 }
 #artDetail {
@@ -2643,6 +2643,7 @@ footer .copy-right {
     color: whitesmoke ;
 }
 .container-fixed,.footer-fixed {width:1280px;margin-left:auto;margin-right:auto;position:relative}
+@media screen and (max-width:1366px){.container-fixed,.footer-fixed,.header-fixed{width:90%}}
 .copyright{padding:10px 0 10px 0}
 .copyright .info{position:relative;text-align:center}
 .grid-footer {

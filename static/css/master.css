@@ -1,20 +1,4 @@
-﻿.header{margin:0 auto;width:100%;height:100%;background-color: #30333F;position:fixed!important;background-image:url(../image/2.jpg);background-size:100% 100%}
-*{margin:0;padding:0}
-#canvas111{
-    position: fixed;
-    background: #cccccc;
-    overflow: auto;
-    z-index: -1;
-}
-#evanyou{
-    position:fixed;
-    width:100%;
-    height:100%;
-    left:0;
-    top:0;
-    z-index: -1;
-}
-a,img{text-decoration:none;border:none}
+﻿a,img{text-decoration:none;border:none}
 button,input,textarea{outline:0;border:none;font:14px/1.5 "Microsoft YaHei","微软雅黑","Helvetica Neue","Hiragino Sans GB",Helvetica,Tahoma,sans-serif;color:#515250}
 h4{font-size:20px}
 li{list-style:none}
@@ -29,23 +13,17 @@ body,html{-webkit-font-smoothing:antialiased;-webkit-backface-visibility:hidden;
 .nav li a{display:block;line-height:32px;padding:4px 28px;color: #fcfdfc;font-weight:400;font-size:22px;font-family:KaiTi;text-shadow:0 1px 0 rgba(252, 249, 249, 0.2);-webkit-transition:all .2s;transition:all .2s}
 .nav .current:before{width:100%;left:0}
 .nav .current a{color:#6bc30d}
-.blog-user{position:absolute;line-height:60px;font-size:24px}
-.blog-user>img{border-radius:50%;width:40px;height:40px}
-.phone-menu{width:50px;height:50px;display:inline-block;position:absolute;cursor:pointer;right:0;top:5px}
-.phone-menu i{background:#787977;display:inline-block;width:22px;height:2px;position:absolute;left:14px}
-.phone-menu i:nth-of-type(1){top:18px}
-.phone-menu i:nth-of-type(2){top:25px}
-.phone-menu i:nth-of-type(3){top:32px}
-.grid-footer{z-index:100;background: rgba(234,234,234,0);font-size:14px;padding:20px 0 0 0;position:relative;zoom:1;clear:both;line-height:20px;margin-top:40px;overflow:hidden}
+
+.grid-footer {
+    z-index:100;
+    background: rgba(234,234,234,0);font-size:14px;
+    position:relative;zoom:1;clear:both;line-height:20px;overflow:hidden;
+    font-family: Georgia,'Noto Serif SC', serif;
+    top: 110px;
+}
 .copyright{padding:10px 0 10px 0}
 .copyright .info{position:relative;text-align:center}
 .copyright p{color:#565755;font-size:13px}
-.copyright .contact a{display:inline-block;width:30px;height:30px;background-color:rgba(255,255,255,.2);text-align:center;line-height:30px;text-shadow:1px 1px 1px rgba(0,0,0,.5);font-size:14px;margin-left:15px;margin-right:0;border-radius:100%;text-decoration:none;color:rgba(255,255,255,.5);-webkit-transition:all .3s;transition:all .3s}
-.copyright .contact a:hover{color:#fff}
-.copyright .contact .github:hover{background-color:#b952c5}
-.copyright .contact .qq:hover{background-color:#d25744}
-.copyright .contact .email:hover{background-color:#668f20}
-.copyright .contact .weixin:hover{background-color:#06a2c9}
 .copyright2{padding:12px 0;background: #f8f4f8
 }
 .copyright2 .text-center{text-align:center}
@@ -83,4 +61,3 @@ body,html{-webkit-font-smoothing:antialiased;-webkit-backface-visibility:hidden;
 .nav li{float:none;border-bottom:1px solid #e8e9e7}
 .nav li:last-child{border:0}
 }
-@font-face{font-family:BarbaraHand;src:url(/font/barbarahand-webfont.eot);src:url(/font/barbarahand-webfont.eot?#iefix) format('embedded-opentype'),url(/font/barbarahand-webfont.woff2) format('woff2'),url(/font/barbarahand-webfont.woff) format('woff'),url(/font/barbarahand-webfont.ttf) format('truetype'),url(/font/barbarahand-webfont.svg#BarbaraHand) format('svg');font-weight:400;font-style:normal}
