@@ -2637,5 +2637,6 @@ footer .copy-right {
     font-family: 'Noto Serif SC',serif;font-size: 15px
 }
 
-.footer-fixed {width:1280px;margin-left:auto;margin-right:auto;position:relative}
+.container-fixed,.footer-fixed {width:1280px;margin-left:auto;margin-right:auto;position:relative}
 .copyright{padding:10px 0 10px 0}
+.copyright .info{position:relative;text-align:center}
