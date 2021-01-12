@@ -1316,7 +1316,7 @@ article .article-tags .chip {
     -webkit-animation: rightan 1.5s infinite;
     -webkit-animation-fill-mode: both;
     bottom: 1px;
-    left: 50%;
+    left: 47.5%;
     position: absolute;
 }
 #artDetail {
@@ -2651,6 +2651,6 @@ footer .copy-right {
     background: rgba(234,234,234,0);font-size:14px;
     position:relative;zoom:1;clear:both;line-height:20px;overflow:hidden;
     font-family: Georgia,'Noto Serif SC', serif;
-    top: 90px;
+    top: 110px;
 }
 .copyright p{color:#565755;font-size:13px}
