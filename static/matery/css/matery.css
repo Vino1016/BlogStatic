@@ -841,10 +841,6 @@ header .go-back i {
     animation: rainbow 60s infinite;
 }
 
-.bg-cover::before {
-    background-image: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/grid.png);
-}
-
 .bg-cover:before,
 .bg-cover:after {
     position: absolute;
@@ -1075,11 +1071,7 @@ article a {
     text-transform: none !important;
 }
 
-article a:hover {
-    font-weight: bold;
-    color: #116022;
-    text-decoration: underline;
-}
+
 
 .articles .row {
     margin-left: 0;
@@ -1225,6 +1217,12 @@ article .article-content .publish-author {
 
 .article-content .publish-author .post-category {
     padding-left: 5px;
+}
+
+article .post-category:hover {
+    font-weight: bold;
+    color: #116022;
+    text-decoration: underline;
 }
 
 article .card .card-action {
