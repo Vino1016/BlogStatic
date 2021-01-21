@@ -24,10 +24,10 @@ $(function () {
     $('.code-area').prepend($code_expand);
     $('.code-expand').on('click', function () {
         if ($(this).parent().hasClass('code-closed')) {
-            $(this).siblings('pre').find('code').slideDown(400);
+            $(this).siblings('pre').find('code').show(500);
             $(this).parent().removeClass('code-closed');
         } else {
-            $(this).siblings('pre').find('code').slideUp(400);
+            $(this).siblings('pre').find('code').hide(500);
             $(this).parent().addClass('code-closed');
         }
     });
