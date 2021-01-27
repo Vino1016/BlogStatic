@@ -194,9 +194,6 @@ pre {
 pre:hover{
     box-shadow: 0 0 8px 3px rgba(0, 0, 0, .12)
 }
-
-
-
 code {
     padding: 1px 5px;
     top: 13px !important;
@@ -255,7 +252,7 @@ code {
 }
 
 .code-closed pre::before {
-    height: 0px;
+    height: 0;
 }
 
 pre code {
@@ -294,7 +291,7 @@ pre[class*="lang-"] {
 
     /* a keyword */
     .com {
-        color: #5A6D79;
+        color: #5a6d79;
     }
 
     /* a comment */
@@ -392,6 +389,7 @@ ol.linenums {
     margin-top: 0;
     margin-bottom: 0;
 }
+
 
 
 
@@ -2652,3 +2650,183 @@ footer .copy-right {
     top: 110px;
 }
 .copyright p{color:#565755;font-size:13px}
+
+/*********LoadingPage*************/
+
+#loading {
+    position: fixed;
+    background-color: #FFF;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+}
+#loading_bg{
+    background-color: #FFF;
+}
+
+.loader {
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: helvetica, arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #ce4233;
+    letter-spacing: 0.2em;
+}
+.loader::before, .loader::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: #ce4233;
+    position: absolute;
+    -webkit-animation: load .7s infinite alternate ease-in-out;
+    animation: load .7s infinite alternate ease-in-out;
+}
+.loader::before {
+    top: 0;
+}
+.loader::after {
+    bottom: 0;
+}
+
+@-webkit-keyframes load {
+    0% {
+        left: 0;
+        height: 30px;
+        width: 15px;
+    }
+    50% {
+        height: 8px;
+        width: 40px;
+    }
+    100% {
+        left: 235px;
+        height: 30px;
+        width: 15px;
+    }
+}
+
+@keyframes load {
+    0% {
+        left: 0;
+        height: 30px;
+        width: 15px;
+    }
+    50% {
+        height: 8px;
+        width: 40px;
+    }
+    100% {
+        left: 235px;
+        height: 30px;
+        width: 15px;
+    }
+}
+#contain {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: calc(50% + 50px);
+    left: calc(50% + 50px);
+    opacity: 0;
+    animation: fadeIn 1s 1;
+    animation-fill-mode: forwards;
+}
+
+.wrap {
+    animation: translateX 1000ms infinite ease-in-out alternate;
+    position: absolute;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    box-shadow: -6.25px -6.25px 0 rgba(0, 0, 0, 0.1) inset;
+    background-color: #397BF9;
+    border-radius: 50%;
+    animation: translateY 500ms infinite ease-in-out alternate;
+}
+
+.wrap:after {
+    content: '';
+    width: 50px;
+    height: 7.5px;
+    background: #eee;
+    position: absolute;
+    bottom: 0;
+    top: 70px;
+    border-radius: 50%;
+    animation: scale 500ms infinite ease-in-out alternate;
+}
+
+#wrap2,
+#ball2,
+#wrap2:after {
+    animation-delay: -400ms;
+}
+
+#wrap3,
+#ball3,
+#wrap3:after {
+    animation-delay: -800ms;
+}
+
+#wrap4,
+#ball4,
+#wrap4:after {
+    animation-delay: -1200ms;
+}
+
+#wrap5,
+#ball5,
+#wrap5:after {
+    animation-delay: -1600ms;
+}
+
+#ball2 {
+    background-color: #F4B400;
+}
+
+#ball3 {
+    background-color: #EEEEEE;
+}
+
+#ball4 {
+    background-color: #00A656;
+}
+
+#ball5 {
+    background-color: #E3746B;
+}
+
+@keyframes translateX {
+    100% {
+        transform: translateX(-150px);
+    }
+}
+@keyframes translateY {
+    100% {
+        transform: translateY(-187.5px);
+    }
+}
+@keyframes scale {
+    100% {
+        transform: scale(0.85);
+    }
+}
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+    }
+}
+/********************************/
