@@ -2667,7 +2667,7 @@ footer .copy-right {
 }
 
 .loader {
-    width: 250px;
+    width: 450px;
     height: 50px;
     line-height: 50px;
     text-align: center;
@@ -2676,7 +2676,7 @@ footer .copy-right {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    font-family: helvetica, arial, sans-serif;
+    font-family: Georgia, 'Noto Serif SC', Helvetica,Arial,Menlo,Monaco,monospace,serif;
     text-transform: uppercase;
     font-weight: 900;
     color: #ce4233;
@@ -2710,7 +2710,7 @@ footer .copy-right {
         width: 40px;
     }
     100% {
-        left: 235px;
+        left: 435px;
         height: 30px;
         width: 15px;
     }
@@ -2727,7 +2727,7 @@ footer .copy-right {
         width: 40px;
     }
     100% {
-        left: 235px;
+        left: 435px;
         height: 30px;
         width: 15px;
     }
