@@ -1,4 +1,11 @@
 $(function () {
+    /*菜单切换*/
+    $('.sidenav').sidenav();
+    AOS.init({
+        easing: 'ease-in-out-sine',
+        duration: 700,
+        delay: 100
+    });
     window.onload = function () {
         NProgress.done();
         var OriginTitile = document.title;
@@ -18,13 +25,6 @@ $(function () {
             }
         });
     };
-    /*菜单切换*/
-    $('.sidenav').sidenav();
-    AOS.init({
-        easing: 'ease-in-out-sine',
-        duration: 700,
-        delay: 100
-    });
     $(".navbar-fixed").headroom();
     var _hmt = _hmt || [];
     var _hmt = _hmt || [];
