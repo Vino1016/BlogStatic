@@ -1,5 +1,3 @@
-
-
 $(function () {
     window.onload = function () {
         NProgress.done();
@@ -20,6 +18,13 @@ $(function () {
             }
         });
     };
+    /*菜单切换*/
+    $('.sidenav').sidenav();
+    AOS.init({
+        easing: 'ease-in-out-sine',
+        duration: 700,
+        delay: 100
+    });
     $(".navbar-fixed").headroom();
     var _hmt = _hmt || [];
     var _hmt = _hmt || [];
@@ -50,14 +55,6 @@ $(function () {
             "opacityOnHover": 0.2
         }
     });
-    /*菜单切换*/
-    $('.sidenav').sidenav();
-    AOS.init({
-        easing: 'ease-in-out-sine',
-        duration: 700,
-        delay: 100
-    });
-
     /**
      * 修复footer部分的位置，使得在内容比较少时，footer也会在底部.
      */
