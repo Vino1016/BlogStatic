@@ -12,7 +12,16 @@ $(function () {
     let fixFooterPosition = function () {
         $('.content').css('min-height', window.innerHeight - 165);
     };
-
+    $(".trigger").click(function() {
+        $(".menu").toggleClass("active");
+        if ($('#open').is(':hidden')) {
+            $('#open').show(500);
+            $('#close').hide(500);
+        }else {
+            $('#close').show(500);
+            $('#open').hide(500);
+        }
+    });
     /**
      * 修复样式.
      */
