@@ -7,6 +7,7 @@ $(function () {
         delay: 100
     });
     window.onload = function () {
+        $(".fa-macos").addClass("fa-apple").removeClass("fa-macos");
         NProgress.done();
         var OriginTitile = document.title;
         var titleTime;
