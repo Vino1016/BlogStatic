@@ -1,8 +1,5 @@
 $(function () {
     /*菜单切换*/
-
-
-
     $('.sidenav').sidenav();
     AOS.init({
         easing: 'ease-in-out-sine',
