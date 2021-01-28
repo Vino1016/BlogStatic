@@ -25,7 +25,6 @@ $(function () {
             }
         });
     };
-    $(".navbar-fixed").headroom();
     var _hmt = _hmt || [];
     var _hmt = _hmt || [];
     (function() {
