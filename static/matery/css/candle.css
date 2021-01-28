@@ -2,12 +2,11 @@
     position: relative;
     display: flex;
     align-items: center;
-    height: 100vh;
+    height: 33vh;
     padding: 0;
     border: 0;
     overflow: hidden;
-    background-color: #FEF4AD;
-    animation: change-background 3s infinite linear;
+    z-index: 2;
 }
 
 .wrapper {
