@@ -1,54 +1,55 @@
-window.onload = function () {
-    NProgress.done();
-    var OriginTitile = document.title;
-    var titleTime;
-    document.addEventListener('visibilitychange', function () {
-        if (document.hidden) {
-            $('[rel="shortcut icon"]').attr('href', "https://cdn.vino.run/Vino.ico");
-            document.title = '(●—●)喔哟，崩溃啦！';
-            clearTimeout(titleTime);
-        }
-        else {
-            $('[rel="shortcut icon"]').attr('href', "https://cdn.vino.run/Vino.ico");
-            document.title = '(/≧▽≦/)咦！又好了！' + OriginTitile;
-            titleTime = setTimeout(function () {
-                document.title = OriginTitile;
-            }, 2000);
-        }
-    });
-};
-$(".navbar-fixed").headroom();
-var _hmt = _hmt || [];
-var _hmt = _hmt || [];
-(function() {
-    var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?03ea8f3076b99ecf2b538efbb568c569";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
-})();
-L2Dwidget.init({
-    "model": {
-        jsonPath: "https://cdn.jsdelivr.net/gh/xiazeyu/live2d-widget-models/packages/live2d-widget-model-tororo/assets/tororo.model.json",
-        "scale": 1
-    },
-    "display": {
-        "position": "left",
-        "width": 150,
-        "height": 300,
-        "hOffset": 0,
-        "vOffset": -20
-    },
-    "mobile": {
-        "show": false,
-        "scale": 0.5
-    },
-    "react": {
-        "opacityDefault": 0.7,
-        "opacityOnHover": 0.2
-    }
-});
+
 
 $(function () {
+    window.onload = function () {
+        NProgress.done();
+        var OriginTitile = document.title;
+        var titleTime;
+        document.addEventListener('visibilitychange', function () {
+            if (document.hidden) {
+                $('[rel="shortcut icon"]').attr('href', "https://cdn.vino.run/Vino.ico");
+                document.title = '(●—●)喔哟，崩溃啦！';
+                clearTimeout(titleTime);
+            }
+            else {
+                $('[rel="shortcut icon"]').attr('href', "https://cdn.vino.run/Vino.ico");
+                document.title = '(/≧▽≦/)咦！又好了！' + OriginTitile;
+                titleTime = setTimeout(function () {
+                    document.title = OriginTitile;
+                }, 2000);
+            }
+        });
+    };
+    $(".navbar-fixed").headroom();
+    var _hmt = _hmt || [];
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?03ea8f3076b99ecf2b538efbb568c569";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+    L2Dwidget.init({
+        "model": {
+            jsonPath: "https://cdn.jsdelivr.net/gh/xiazeyu/live2d-widget-models/packages/live2d-widget-model-tororo/assets/tororo.model.json",
+            "scale": 1
+        },
+        "display": {
+            "position": "left",
+            "width": 150,
+            "height": 300,
+            "hOffset": 0,
+            "vOffset": -20
+        },
+        "mobile": {
+            "show": false,
+            "scale": 0.5
+        },
+        "react": {
+            "opacityDefault": 0.7,
+            "opacityOnHover": 0.2
+        }
+    });
     /*菜单切换*/
     $('.sidenav').sidenav();
     AOS.init({
