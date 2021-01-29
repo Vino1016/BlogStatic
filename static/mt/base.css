@@ -1,0 +1,80 @@
+.Vino-BG {
+	--color-text: #fff;
+	--color-bg: #0e0e0f;
+	--color-link: #EC8F7B;
+	--color-link-hover: #fff;
+	--color-title: #fff;
+	--color-subtitle: #fff;
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	font-family: Barlow, Arial, sans-serif;
+	overflow: hidden;
+	height: 100vh;
+}
+
+.demo-2 {
+	--color-text: #fff;
+	--color-bg: #0e0e0f;
+	--color-link: #854aa5;
+	--color-link-hover: #fff;
+	--color-title: #fff;
+	--color-subtitle: #fff;
+}
+
+.demo-3 {
+	--color-text: #fff;
+	--color-bg: #0e0e0f;
+	--color-link: #E5CA56;
+	--color-link-hover: #fff;
+	--color-title: #fff;
+	--color-subtitle: #fff;
+}
+
+
+.content {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: calc(100vh - 13rem);
+	position: relative;
+	justify-content: center;
+	align-items: center;
+}
+
+.content__title {
+	position: relative;
+	color: var(--color-title);
+	font-size: 10vw;
+	top: -50px;
+	text-transform: uppercase;
+	margin: 0;
+	perspective: 1000px;
+	font-family: Barlow, Arial, sans-serif;
+}
+
+.content__title span {
+	display: inline-block;
+	white-space: pre;
+	transform-origin: 50% -50%;
+}
+
+.content__subtitle {
+	position: relative;
+	margin: 0;
+	color: var(--color-subtitle);
+}
+
+.landscape {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #000;
+}
