@@ -51,7 +51,7 @@ $(function () {
             "scale": 0.5
         },
         "react": {
-            "opacityDefault": 0.7,
+            "opacityDefault": 0.85,
             "opacityOnHover": 0.2
         }
     });
