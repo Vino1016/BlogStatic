@@ -1240,6 +1240,10 @@ article .article-tags .chip {
     color: #fff;
     border-radius: 10px;
 }
+.article-tags .chip:hover{
+    background: linear-gradient(to bottom right, #FF5E3A 0%, #9ce525 100%) !important;
+    box-shadow: 2px 5px 10px #aaa !important;
+}
 
 .prev-next {
     margin-left: -0.75rem;
@@ -1369,6 +1373,10 @@ article .article-tags .chip {
     border-radius: 15px;
     margin-right: 5px;
     margin-bottom: 2px;
+}
+#artDetail .article-tag .chip:hover{
+    background: linear-gradient(to bottom right, #FF5E3A 0%, #9ce525 100%) !important;
+    box-shadow: 2px 5px 10px #aaa !important;
 }
 
 #artDetail .tag_share .article-tag .chip {
@@ -2876,9 +2884,10 @@ footer .copy-right {
     position: relative;
     font-family: "Luckiest Guy", cursive;
     margin: 0;
-    display: inline;top: -120px;left: 380px;
     font-size: 6em;
     padding: 0;
+    top: 0;
+    left: 0;
     color: white;
     text-shadow: 0 0.1em 20px black, 0.05em -0.03em 0 black, 0.05em 0.005em 0 black, 0em 0.08em 0 black, 0.05em 0.08em 0 black, 0px -0.03em 0 black, -0.03em -0.03em 0 black, -0.03em 0.08em 0 black, -0.03em 0 0 black;
 }
@@ -2940,5 +2949,76 @@ footer .copy-right {
         -webkit-transform: scale(1) rotateZ(-3deg);
         transform: scale(1) rotateZ(-3deg);
     }
+}
+
+.about-typed{
+    position: absolute;top: 70vh;width: 100vw
+}
+.article-typed{
+    position: absolute;top: 72vh;width: 100vw;
+}
+.link-typed{
+    position: absolute;top: 40vh;width: 100vw;
+
+}
+.about-tag-Vino{
+    position: absolute;left: 30vw;top: 20vh;
+}
+.article-tag-Vino{
+    position: absolute;left: 30vw;top: 30vh;
+}
+.about-tag-blog{
+    position: absolute;left: 70vw;
+}
+.about-tag-about{
+    position: absolute;top: 30vh;left: 12vw;
+}
+#subtitle{
+    color: white;font-family: 'Zhi Mang Xing', cursive;font-size: 30px
+}
+.m-V-title{
+    font-size: 3rem
+}
+.V-img{
+    position: absolute;top: 20vh;right: 30vw;
+}
+.m-V-img{
+    position:absolute;top: 40vh;
+}
+.about-inner{
+    max-width: 900px;margin: 0 auto
+}
+.m-rightan{
+    left: 40%
+}
+.V-title-top{
+    font-size:3rem;font-family: Georgia, 'Noto Serif SC',serif !important;
+}
+.piano-message{
+    height: 260px;left: 140px;top: -65px;z-index: 2;
+}
+.loader-pos1{
+    top: 30%;font-family: 'Luckiest Guy', cursive;
+}
+.loader-pos2{
+    top: 30%;font-family: 'Noto Serif SC',serif;
+}
+.comment-head{
+    font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;
+}
+.V-img-link{
+    position: absolute;
+    left: 21vw;
+}
+.link-tag{
+    position: absolute;
+    right: 21vw;
+}
+.card-link{
+    max-width: 900px;margin: 0 auto;top: 20px
+}
+.m-V-img-article{
+    position: absolute;
+    top: 20vh;
 }
 

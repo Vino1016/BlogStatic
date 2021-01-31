@@ -71,6 +71,18 @@ $(function () {
             $('#open').hide(500);
         }
     });
+    $('#sliderV').click(function(){
+        if($('#commentArea1').is(':hidden')){
+            $('#commentArea1').fadeIn(400);
+        } else{
+            $('#commentArea1').fadeOut(400);
+        }
+        if($('#commentArea2').is(':hidden')){
+            $('#commentArea2').slideDown(400);
+        } else{
+            $('#commentArea2').slideUp(400);
+        }
+    });
     /**
      * 修复样式.
      */
@@ -102,11 +114,21 @@ $(function () {
         $('body,html').animate({scrollTop: 0}, 600);
         return false;
     });
+    $('#backTop-V').click(function () {
+        $('body,html').animate({scrollTop: 0}, 600);
+        return false;
+    });
     $('#toComment').click(function () {
         let valOfScroll =$('#comment').offset().top-190;
         //让滚轴从当前位置的scroll在600毫秒内偏移到位置为valOfScroll。
         $("html,body").animate({scrollTop: valOfScroll}, 600)
     });
+    $('#toComment-m').click(function () {
+        let valOfScroll =$('#comment').offset().top-190;
+        //让滚轴从当前位置的scroll在600毫秒内偏移到位置为valOfScroll。
+        $("html,body").animate({scrollTop: valOfScroll}, 600)
+    });
+
 
 
     //监听滚动条位置
