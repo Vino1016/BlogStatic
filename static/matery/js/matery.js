@@ -55,6 +55,23 @@ $(function () {
             "opacityOnHover": 0.2
         }
     });
+    setTimeout(function(){
+        var starTime = '2020-11-20';
+        var endTime = (new Date()).Format("yyyy-MM-dd");
+        function datedifference(sDate1, sDate2) {    //sDate1和sDate2是2006-12-18格式
+            var dateSpan,
+                tempDate,
+                iDays;
+            sDate1 = Date.parse(sDate1);
+            sDate2 = Date.parse(sDate2);
+            dateSpan = sDate2 - sDate1;
+            dateSpan = Math.abs(dateSpan);
+            iDays = Math.floor(dateSpan / (24 * 3600 * 1000));
+            return iDays
+        };
+        var Days = datedifference(starTime,endTime);
+        document.getElementById("runningTime").innerHTML = Days + " days";
+    },100);
     /**
      * 修复footer部分的位置，使得在内容比较少时，footer也会在底部.
      */
@@ -177,21 +194,4 @@ $(function () {
                 fmt = fmt.replace(RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length)));
         return fmt;
     }
-    setTimeout(function(){
-        var starTime = '2020-11-20';
-        var endTime = (new Date()).Format("yyyy-MM-dd");
-        function datedifference(sDate1, sDate2) {    //sDate1和sDate2是2006-12-18格式
-            var dateSpan,
-                tempDate,
-                iDays;
-            sDate1 = Date.parse(sDate1);
-            sDate2 = Date.parse(sDate2);
-            dateSpan = sDate2 - sDate1;
-            dateSpan = Math.abs(dateSpan);
-            iDays = Math.floor(dateSpan / (24 * 3600 * 1000));
-            return iDays
-        };
-        var Days = datedifference(starTime,endTime);
-        document.getElementById("runningTime").innerHTML = Days + " days";
-    },100);
 });
