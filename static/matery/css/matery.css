@@ -3027,16 +3027,32 @@ footer .copy-right {
 }
 .zoombe-about{
     position: absolute;top: 240px;right: 200px;
+    transition-duration: 6s !important;
 }
 .zoombe-comment{
     position: absolute;left: 5vw;
+    transition-duration: 6s !important;
 }
 .zoombe-link{
     position: absolute;top: 21px;right: -60px;
+    transition-duration: 6s !important;
 }
 .zoombe-footer{
     position: absolute;top: -30px;
 }
+.zoombe-tag{
+    position: absolute;
+    bottom: 10px;
+    right: 20vw;
+    transition-duration: 6s !important;
+}
+.zoombe-archive{
+    position: absolute;
+    bottom: 10px;
+    right: 30vw;
+    transition-duration: 6s !important;
+}
+
 .head-comment{
     font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;
 }
@@ -3057,5 +3073,11 @@ footer .copy-right {
 }
 .other-item li:hover{
     box-shadow: 2px 5px 10px #aaa !important;
+}
+.first-comment{
+    font-family: 'Luckiest Guy', cursive;font-size: 1.2rem !important;
+}
+.second-comment{
+    font-family: 'Luckiest Guy', cursive;font-size: 1.2rem !important;
 }
 
