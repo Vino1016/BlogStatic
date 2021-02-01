@@ -34,15 +34,18 @@
 }
 body,html{
     -webkit-font-smoothing:antialiased;-webkit-backface-visibility:hidden;overflow-x:hidden;
-    cursor: url(https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/left_ptr.png), default !important;
+    cursor: url(https://cdn.vino.run/img/Vino_2021-02-01-19-55-1.ico), default !important;
 }
 body {
-    background-color: #eaeaea;
+    background-color: #f8f8f8;
     margin: 0;
     color: #34495e;
     overflow-x: hidden;
     overflow-y: auto;
     font-family: Georgia, 'Noto Serif SC', Helvetica,Arial,Menlo,Monaco,monospace,serif;
+}
+a:hover{
+    cursor: url(https://cdn.vino.run/img/Vino_2021-02-01-22-17-2.ico), default !important;
 }
 
 /* 让每一级标题更加明显，添加标注 */
@@ -2275,6 +2278,7 @@ footer .copy-right {
 #searchModal {
     min-height: 500px;
     width: 80%;
+    background-color: rgba(255,255,255,0.8);
 }
 
 #searchModal .search-header .title {
@@ -2610,7 +2614,7 @@ footer .copy-right {
      margin-bottom: 5px;
  }
 .V-badge .badge-subject {
-    display: inline-block;
+    display: inline;
     background-color: #4d4d4d;
     padding: 4px 4px 4px 6px;
     border-top-left-radius: 4px;
@@ -3020,5 +3024,38 @@ footer .copy-right {
 .m-V-img-article{
     position: absolute;
     top: 20vh;
+}
+.zoombe-about{
+    position: absolute;top: 240px;right: 200px;
+}
+.zoombe-comment{
+    position: absolute;left: 5vw;
+}
+.zoombe-link{
+    position: absolute;top: 21px;right: -60px;
+}
+.zoombe-footer{
+    position: absolute;top: -30px;
+}
+.head-comment{
+    font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;
+}
+.card-message{
+    max-width: 900px;margin: 0 auto;top: 20px
+}
+.archive-end{
+    padding-top:4px;padding-bottom:2px;margin-top:40px;
+}
+
+.btn-floating:hover{
+    background: linear-gradient(to bottom right, #FF5E3A 0%, #9ce525 100%) !important;
+    box-shadow: 2px 5px 10px #aaa !important;
+}
+.btn-icon:hover{
+    background: linear-gradient(to bottom right, #FF5E3A 0%, #9ce525 100%) !important;
+    box-shadow: 2px 5px 10px #aaa !important;
+}
+.other-item li:hover{
+    box-shadow: 2px 5px 10px #aaa !important;
 }
 
