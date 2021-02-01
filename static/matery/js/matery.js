@@ -6,26 +6,6 @@ $(function () {
         duration: 700,
         delay: 100
     });
-    window.onload = function () {
-        $(".fa-macos").addClass("fa-apple").removeClass("fa-macos");
-        NProgress.done();
-        var OriginTitile = document.title;
-        var titleTime;
-        document.addEventListener('visibilitychange', function () {
-            if (document.hidden) {
-                $('[rel="shortcut icon"]').attr('href', "https://cdn.vino.run/Vino.ico");
-                document.title = '(●—●)喔哟，崩溃啦！';
-                clearTimeout(titleTime);
-            }
-            else {
-                $('[rel="shortcut icon"]').attr('href', "https://cdn.vino.run/Vino.ico");
-                document.title = '(/≧▽≦/)咦！又好了！' + OriginTitile;
-                titleTime = setTimeout(function () {
-                    document.title = OriginTitile;
-                }, 2000);
-            }
-        });
-    };
     var _hmt = _hmt || [];
     var _hmt = _hmt || [];
     (function() {
@@ -55,6 +35,41 @@ $(function () {
             "opacityOnHover": 0.2
         }
     });
+    setTimeout(function(){
+        $(".fa-macos").addClass("fa-apple").removeClass("fa-macos");
+        var OriginTitile = document.title;
+        var titleTime;
+        document.addEventListener('visibilitychange', function () {
+            if (document.hidden) {
+                $('[rel="shortcut icon"]').attr('href', "https://cdn.vino.run/Vino.ico");
+                document.title = '(●—●)喔哟，崩溃啦！';
+                clearTimeout(titleTime);
+            }
+            else {
+                $('[rel="shortcut icon"]').attr('href', "https://cdn.vino.run/Vino.ico");
+                document.title = '(/≧▽≦/)咦！又好了！' + OriginTitile;
+                titleTime = setTimeout(function () {
+                    document.title = OriginTitile;
+                }, 2000);
+            }
+        });
+        var starTime = '2020-11-20';
+        var endTime = (new Date()).Format("yyyy-MM-dd");
+        function datedifference(sDate1, sDate2) {    //sDate1和sDate2是2006-12-18格式
+            var dateSpan,
+                tempDate,
+                iDays;
+            sDate1 = Date.parse(sDate1);
+            sDate2 = Date.parse(sDate2);
+            dateSpan = sDate2 - sDate1;
+            dateSpan = Math.abs(dateSpan);
+            iDays = Math.floor(dateSpan / (24 * 3600 * 1000));
+            return iDays
+        };
+        var Days = datedifference(starTime,endTime);
+        document.getElementById("runningTime").innerHTML = Days + " days";
+    },100);
+
     setTimeout(function(){
         var starTime = '2020-11-20';
         var endTime = (new Date()).Format("yyyy-MM-dd");
