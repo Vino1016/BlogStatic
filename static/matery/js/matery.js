@@ -192,6 +192,6 @@ $(function () {
             return iDays
         };
         var Days = datedifference(starTime,endTime);
-        document.getElementById("runningTime").innerHTML = Days + " 天";
+        document.getElementById("runningTime").innerHTML = Days + " days";
     },100);
 });
