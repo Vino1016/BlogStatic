@@ -504,6 +504,29 @@ input:checked + .sliderV:before {
     display: none;
 }
 
+#vcomments .fa-firefox:before {
+    color: #f53a3a;
+}
+#vcomments .fa-chrome:before {
+    color: #f14f05;
+}
+#vcomments .fa-windows:before {
+    color: #3f8cd9;
+}
+#vcomments .fab fa-wechat:before{
+    color: #09cb6e;
+}
+#vcomments .fa-edge:before {
+    color: #1a2bdc;
+}
+#vcomments .fa-safari:before {
+    color: #6084d9;
+}
+#vcomments .fa-android:before {
+    content: "\f17b";
+    color: #0c9850;
+}
+
 
 
 
