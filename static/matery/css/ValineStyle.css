@@ -105,6 +105,7 @@ img.vimg {
     margin: 2px 2px 10px;
     font-size: 1.05rem;
     line-height: 1.78rem;
+    color: #1f1e1e !important;
 }
 
 #vcomments blockquote p {
