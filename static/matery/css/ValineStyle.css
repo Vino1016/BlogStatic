@@ -30,6 +30,10 @@
     -ms-transform: rotate(360deg);
     box-shadow: 0 0 8px 3px rgba(0, 0, 0, .12);
 }
+.vvisitor{
+    transition: all .3s;
+    box-shadow: 0 0 4px 1px rgb(0 0 0 / 12%);
+}
 #vcomments .vcards .vcard:hover .vvisitor{
     box-shadow: 0 0 8px 3px rgba(0, 0, 0, .12);
 }
@@ -420,6 +424,7 @@ table tr:nth-child(2n), thead {
 }
 
 .comment-switch {
+    transition: all .3s;
     display: inline-block;
     float: right;
     margin-top: -4px;
@@ -427,17 +432,21 @@ table tr:nth-child(2n), thead {
     width: max-content;
     border-radius: 8px;
     background: #f6f8fa;
+    box-shadow: 0 0 4px 1px rgb(0 0 0 / 12%);
+}
+.comment-switch:hover{
+    box-shadow: 0 0 8px 3px rgba(0, 0, 0, .12);
 }
 .comment-switch .first-comment {
     color: #b9dd5b;
-    font-size: 1.1rem;
-    font-family: 'Noto Serif SC', serif;
+    font-size: 1.2rem;
+    font-family: 'Luckiest Guy', cursive;
 }
 
 .comment-switch .second-comment {
     color: #291006;
-    font-size: 1.1rem;
-    font-family: 'Noto Serif SC', serif;
+    font-size: 1.2rem;
+    font-family: 'Luckiest Guy', cursive;
 }
 .switch {
     position: relative;
