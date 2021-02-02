@@ -1,4 +1,6 @@
-
+#comment{
+    transition: all .3s
+}
 #vcomments .vcards .vcard {
     padding: 15px 20px 0 20px;
     border-radius: 10px;
@@ -10,12 +12,26 @@
 #vcomments .vcards .vcard:hover {
     box-shadow: 0 0 8px 3px rgba(0, 0, 0, .12)
 }
+
+#vcomments .vpanel{
+    box-shadow: 0 0 4px 1px rgb(0 0 0 / 12%);
+    border-radius: 10px;
+    transition: all .3s
+}
+#vcomments .vpanel:hover{
+    box-shadow: 0 0 8px 3px rgba(0, 0, 0, .12)
+}
+
 #vcomments .vcards .vcard:hover img.vimg{
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
+    box-shadow: 0 0 8px 3px rgba(0, 0, 0, .12);
+}
+#vcomments .vcards .vcard:hover .vvisitor{
+    box-shadow: 0 0 8px 3px rgba(0, 0, 0, .12);
 }
 
 #vcomments .vcards .vcard .vh .vcard {
@@ -23,6 +39,7 @@
     box-shadow: none;
 }
 img.vimg {
+    box-shadow: 0 0 4px 1px rgb(0 0 0 / 12%);
     transition: all 1s   /* 旋转时间为 1s */
 }
 
@@ -37,6 +54,22 @@ img.vimg {
 #veditor:focus{
     background-position-y: 200px;
     transition: all 0.2s ease-in-out 0s;
+}
+.v[data-class=v] .vcards .vcard .vh .vmeta .vat {
+    padding: 4px 10px;
+    box-shadow: 0 0 4px 1px rgb(0 0 0 / 12%);
+    margin-right: 5px;
+    transition: all .3s
+}
+.v[data-class=v] .vcards .vcard .vh .vmeta .vat:hover{
+    box-shadow: 0 0 8px 3px rgba(0, 0, 0, .12);
+    color: #7691E8;
+}
+.v[data-class=v] .vbtn{
+    box-shadow: 0 0 4px 1px rgb(0 0 0 / 12%);
+}
+.v[data-class=v] .vbtn:hover{
+    box-shadow: 0 0 8px 3px rgba(0, 0, 0, .12);
 }
 .v[data-class=v] .vinput {
     padding: 0 0 !important;
