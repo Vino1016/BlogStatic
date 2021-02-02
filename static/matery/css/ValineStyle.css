@@ -30,11 +30,11 @@
     -ms-transform: rotate(360deg);
     box-shadow: 0 0 8px 3px rgba(0, 0, 0, .12);
 }
-.vvisitor{
+.vtag{
     transition: all .3s;
     box-shadow: 0 0 4px 1px rgb(0 0 0 / 12%);
 }
-#vcomments .vcards .vcard:hover .vvisitor{
+#vcomments .vcards .vcard:hover .vtag{
     box-shadow: 0 0 8px 3px rgba(0, 0, 0, .12);
 }
 
