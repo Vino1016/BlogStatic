@@ -3080,6 +3080,12 @@ footer .copy-right {
 .second-comment{
     font-family: 'Luckiest Guy', cursive;font-size: 1.2rem !important;
 }
+.v-card{
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, .12) !important;
+}
+.v-card:hover{
+    box-shadow: 0 0 8px 3px rgba(0, 0, 0, .12) !important;
+}
 
 /*********valine*********/
 
