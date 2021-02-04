@@ -3321,7 +3321,7 @@ footer .copy-right {
         content: counter(ol-li);
         counter-increment: ol-li;
         transition: all .5s;
-        font-family: 'Noto Serif SC', serif;
+        font-family: Arial,serif !important;
        }
        .v-order ol li:hover::before{
         transform: rotate(360deg);
