@@ -2320,9 +2320,10 @@ footer .copy-right {
 .top-scroll {
     position: fixed;
     right: 15px;
-    bottom: 15px;
+    bottom: 75px;
     padding-top: 15px;
     z-index: 998;
+    display: block;
 }
 
 /*去到评论区按钮*/
@@ -2336,41 +2337,44 @@ footer .copy-right {
 #floating-toc-btn {
     position: fixed;
     right: 15px;
-    bottom: 132px;
+    bottom: 134px;
     padding-top: 15px;
-    margin-bottom: 0;
     z-index: 998;
 }
 
 #floating-toc-btn .btn-floating {
     width: 48px;
     height: 48px;
+    background: white;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, .12) !important;
+    border-radius:6px !important;
 }
 
-#floating-toc-btn .btn-floating i {
-    line-height: 48px;
-    font-size: 1.4rem;
+#floating-toc-btn .btn-floating svg {
+    position: relative;top: 5px;
 }
 
 .top-scroll .btn-floating {
-    background: linear-gradient(to bottom right, #FF5E3A 0%, #FF2A68 100%);
+    background: white;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, .12) !important;
+    border-radius:6px !important;
     width: 48px;
     height: 48px;
 }
 
-.top-scroll .btn-floating i {
-    line-height: 48px;
-    font-size: 1.8rem;
+.top-scroll .btn-floating svg {
+    position: relative;top: 5px;
 }
 .toComment-scroll .btn-floating {
-    background: linear-gradient(to bottom right, #8dca8b 0%, #05c30d 100%);
+    background: white;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, .12) !important;
+    border-radius:6px !important;
     width: 48px;
     height: 48px;
 }
 
-.toComment-scroll .btn-floating i {
-    line-height: 48px;
-    font-size: 1.8rem;
+.toComment-scroll .btn-floating svg {
+    position: relative;top: 5px;
 }
 
 @media screen and (min-width: 368px) and (max-width: 767px) {
@@ -3087,7 +3091,218 @@ footer .copy-right {
     box-shadow: 0 0 8px 3px rgba(0, 0, 0, .12) !important;
 }
 
-/*********valine*********/
+/*********menu*********/
+.menu-V {
+    display: block;
+    box-sizing: border-box;
+    background: white;
+    height: 48px;
+    width: 48px;
+    padding: 22px;
+    border-radius: 6px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, .12);
+    transition: 1.3s cubic-bezier(0.53, 0, 0.15, 1.3);
+    z-index: 9999;
+}
+.menu-V:hover {
+    box-shadow: 0 0 8px 3px rgba(0, 0, 0, .12)
+}
+.menu-V.expanded {
+    width: 203px;
+    border-radius: 15px;
+}
 
+.menu-V .icon-V {
+    padding: 3px;
+    white-space: nowrap;
+    visibility: visible;
+    opacity: 1;
+    transition: .3s;
+    transform: rotateY(0deg);
+    position: relative;
+    right: 6px;
+    top: -18px;
+
+}
+.menu-V .icon-V:nth-of-type(1) {
+    transition-delay: .4s;
+}
+.menu-V .icon-V:nth-of-type(2) {
+    transition-delay: .5s;
+}
+.menu-V .icon-V:nth-of-type(3) {
+    transition-delay: .6s;
+}
+.menu-V .icon-V:nth-of-type(4) {
+    transition-delay: .7s;
+}
+.menu-V .icon-V.hidden {
+    width: 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: rotateY(90deg);
+}
+.menu-V .icon-V.hidden:nth-of-type(1) {
+    transition-delay: .3s;
+}
+.menu-V .icon-V.hidden:nth-of-type(2) {
+    transition-delay: .2s;
+}
+.menu-V .icon-V.hidden:nth-of-type(3) {
+    transition-delay: .1s;
+}
+.menu-V .icon-V.hidden:nth-of-type(4) {
+    transition-delay: 0s;
+}
+
+
+.menu-V .container-M {
+    position: absolute;
+    top: 3px;
+    right: calc(100% - 53.5px);
+    height: 42.75px;
+    width: 58.5px;
+    transition: 1s;
+}
+.menu-V .container-M.close {
+    right: 0;
+}
+
+.menu-V .toggle {
+    position: relative;
+    height: 42.75px;
+    width: 58.5px;
+    cursor: pointer;
+}
+.menu-V .toggle:after, .toggle:before {
+    content: '';
+    background: #1D90F5;
+    width: 36px;
+    height: 4.5px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: 1.3s cubic-bezier(0.53, 0, 0.15, 1.3);
+}
+.menu-V .toggle:before {
+    top: -30%;
+}
+.menu-V .toggle:after {
+    top: 30%;
+}
+.menu-V .toggle.close:before {
+    transform: rotate(-225deg);
+    top: 0;
+}
+.menu-V .toggle.close:after {
+    transform: rotate(225deg);
+    top: 0;
+}
 /************************/
+    /* note 公共样式 */
+    .note {
+        position: relative;
+        padding: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: initial;
+        border-left: 3px solid #eee;
+        background-color: #f9f9f9;
+        border-radius: 3px;
+        font-size: 18px;
+    }
 
+    .note:not(.no-icon):before {
+        position: absolute;
+        font-family: 'Font Awesome\ 5 Free';
+        font-size: larger;
+        top: 11px;
+        left: 15px;
+        font-weight: 900;
+    }
+
+    .note:not(.no-icon) {
+        padding-left: 45px;
+    }
+
+    .note.info {
+        background-color: #eef7fa;
+        border-left-color: #428bca;
+    }
+
+    .note.info:not(.no-icon):before {
+        content: "\f05a";
+        color: #428bca;
+    }
+
+    .note.warning {
+        background-color: #fdf8ea;
+        border-left-color: #f0ad4e;
+    }
+
+    .note.warning:not(.no-icon):before {
+        content: "\f06a";
+        color: #f0ad4e;
+    }
+
+    .note.primary {
+        background-color: #f5f0fa;
+        border-left-color: #6f42c1;
+    }
+
+    .note.primary:not(.no-icon):before {
+        content: "\f055";
+        color: #6f42c1;
+    }
+
+    .note.danger {
+        background-color: #fcf1f2;
+        border-left-color: #d9534f;
+    }
+
+    .note.danger:not(.no-icon):before {
+        content: "\f056";
+        color: #d9534f;
+    }
+    /* 美化 hr 样式 */
+    hr {
+        position: relative;
+        margin: 2rem auto;
+        width: calc(100% - 4px);
+        border: 2px dashed #a4d8fa;
+        background: #fff;
+    }
+
+    hr {
+        box-sizing: content-box;
+        height: 0;
+        overflow: visible;
+    }
+
+    hr:before {
+        position: absolute;
+        top: -10px;
+        left: 5%;
+        z-index: 1;
+        color: #49b1f5;
+        content: '\f0fb';
+        font: normal normal normal 14px/1 'Font Awesome\ 5 Free';
+        font-weight: 900;
+        font-size: 20px;
+        -webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
+    }
+
+    hr:hover::before{
+        left: 95%;
+    }
