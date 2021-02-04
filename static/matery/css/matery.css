@@ -147,12 +147,6 @@ p {
     line-height: 1.5rem;
 }
 
-hr {
-    margin: 20px 0;
-    border: 0;
-    border-top: 1px solid #ccc;
-}
-
 blockquote {
     border-left: 5px solid #42b983;
     padding: 1rem 0.8rem 0.2rem 0.8rem;
@@ -3274,14 +3268,14 @@ footer .copy-right {
     /* 美化 hr 样式 */
     hr {
         position: relative;
-        margin: 2rem auto;
+        margin: 2rem auto !important;
         width: calc(100% - 4px);
-        border: 2px dashed #a4d8fa;
+        border: 2px dashed #a4d8fa !important;
         background: #fff;
     }
 
     hr {
-        box-sizing: content-box;
+        box-sizing: content-box !important;
         height: 0;
         overflow: visible;
     }
