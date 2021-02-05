@@ -1552,7 +1552,7 @@ article .article-tags .chip {
 }
 
 #articleContent ul li {
-    list-style-type: disc;
+    list-style-type: none;
 }
 
 #articleContent ul ul li {
