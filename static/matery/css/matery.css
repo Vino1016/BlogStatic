@@ -1558,6 +1558,39 @@ article .article-tags .chip {
 #articleContent ul ul li {
     list-style-type: circle;
 }
+#articleContent ul{
+    list-style: none;  /* 隐藏原来的 1. 2. 等序号样式 */
+    counter-reset: ul-li-ul-li;
+}
+
+#articleContent ul li:before {
+    display: block;
+    float: left;
+    width: 19px;   /* 宽度和高度需要根据自己的字体大小进行修正 */
+    height: 19px;
+    line-height: 19px;
+    margin: 4px 12px 0 0;
+    color: #fff;
+    font-weight: 300;
+    font-style: normal;
+    background-color: #49b1f5;
+    border-radius: 50%;
+    text-align: center;
+    content: counter(ul-li-ul-li);
+    counter-increment: ul-li-ul-li;
+    transition: all .5s;
+    font-family: Arial,serif !important;
+}
+#articleContent ul li ul li:before {
+    content: none;
+}
+#articleContent ul li:hover::before{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+}
 
 #articleContent table {
 	width: 100%;
@@ -1627,7 +1660,7 @@ thead {
         }
 
         #toc-content ul ul li {
-            list-style-type: none;
+            list-style-type: circle;
             font-size: 0.95rem;
         }
 
