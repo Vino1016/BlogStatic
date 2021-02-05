@@ -1404,12 +1404,10 @@ to {
 	transform:rotate(-1turn) translateX(6em);
 }
 }.load-progress {
-	position:absolute;
-	top:75vh;
-	left:40vw;
-	width:400px;
-	height:20px;
-	background:#eee;
+	position:relative;width:400px;height:20px;margin:0 auto;background:#eee;
+}
+.load-progress-V{
+    position:absolute;width:100vw;height:20px;top:75vh;
 }
 .load-progress::after {
 	content:"";
