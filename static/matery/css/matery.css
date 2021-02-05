@@ -5,6 +5,13 @@
         width: 95%;
     }
 }
+@media screen and (max-width:750px){
+    .V-badge {
+        zoom: 0.7;
+    } 
+    footer .info img{zoom:0.7} 
+    .V-icp p{font-size: 10px !important}
+}
 
 /*中等屏幕下(平板类)的样式*/
 @media only screen and (min-width: 600px) and (max-width: 992px) {
@@ -12,6 +19,12 @@
         width: 90%;
     }
 }
+    @media screen and (max-width:1250px){
+        .V-title{zoom: 0.8} 
+        .m-V-title{zoom: 1}
+        .V-title-top{zoom: 1}
+        .V-img-link img{zoom :0.8}
+    }
 
 /*大屏幕下(桌面类)的样式*/
 @media only screen and (min-width: 993px) {
@@ -1316,7 +1329,7 @@ article .article-tags .chip {
     -webkit-animation: rightan 1.5s infinite;
     -webkit-animation-fill-mode: both;
     bottom: 1px;
-    left: 47.5%;
+    width: 100vw;
     position: absolute;
 }
 #artDetail {
@@ -3546,4 +3559,5 @@ footer .copy-right {
             font-size: 24px
         }
     }
+    
     

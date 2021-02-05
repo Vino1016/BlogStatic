@@ -197,8 +197,7 @@ to{opacity:0}
 @media screen and (min-width:1025px){.category-toggle{display:none}
 .article-category,.blog-mask{display:none!important}
 }
-@media screen and (max-width:1024px){.f-qq,.f-qzone{display:none}
-#categoryandsearch{display:none}
+@media screen and (max-width:1250px){
 .col-content,.col-other{width:100%;float:none}
 #categoryandsearch.fixed{position:initial;animation:none;-webkit-animation:none;transform:none;-webkit-transform:none;width:100%;margin-top:20px}
 }
