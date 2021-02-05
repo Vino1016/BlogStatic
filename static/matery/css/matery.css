@@ -61,7 +61,12 @@ body {
 a:hover{
     cursor: url(https://cdn.vino.run/img/Vino_2021-02-01-22-17-2.ico), default !important;
 }
-
+#particles-js {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: -99;
+}
 /* 让每一级标题更加明显，添加标注 */
 
 h1 {
