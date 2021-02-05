@@ -11,7 +11,7 @@
     } 
     footer .info img{zoom:0.7} 
     .V-icp p{font-size: 10px !important}
-    #searchModal{width: 80%;}
+    #searchModal{width: 80% !important;}
 }
 
 /*中等屏幕下(平板类)的样式*/
