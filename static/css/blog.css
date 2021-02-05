@@ -61,13 +61,19 @@ border-radius: 9px;}
 .other-item .inner{margin:0 20px;padding-bottom:10px}
 .other-item .inner .hot-list-article li{display:block;transition: all 0.4s;line-height:32px;position:relative;margin:3px 0;counter-increment:nums;padding-left:30px;overflow:hidden;word-wrap:normal!important;white-space:nowrap;text-overflow:ellipsis}
 .hot-list-article li a{color:#787977}
-.hot-list-article li:before{width:22px;height:22px;line-height:22px;text-align:center;content:counter(nums,decimal);position:absolute;left:0;top:5px;border-radius:100%;background-color:#edefee;text-shadow:0 1px 0 rgba(255,255,255,.5);font-family:SourceCodeProRegular,Menlo,Monaco,Consolas,"Courier New",monospace,'Helvetica Neue',Arial,sans-serif}
+.hot-list-article li:before{transition: all .5s;width:22px;height:22px;line-height:22px;text-align:center;content:counter(nums,decimal);position:absolute;left:0;top:5px;border-radius:100%;background-color:#edefee;text-shadow:0 1px 0 rgba(255,255,255,.5);font-family:SourceCodeProRegular,Menlo,Monaco,Consolas,"Courier New",monospace,'Helvetica Neue',Arial,sans-serif}
 .hot-list-article li:first-child:before,.hot-list-article li:nth-child(2):before,.hot-list-article li:nth-child(3):before{color:#fff;text-shadow:none}
 .hot-list-article li:first-child:before{background-color:#e24d46}
 .hot-list-article li:nth-child(2):before{background-color:#2ea7e0}
 .hot-list-article li:nth-child(3):before{background-color:#6bc30d}
 .hot-list-article li:hover{border-radius:5px;
     background-color:#DCDCDC}
+    .hot-list-article li:hover::before{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);}
 .article-item .content h6{margin:20px 0;border-left:3px solid #6bc30d;min-height:26px;line-height:26px;padding:5px 20px;background-color:#f8f9f7;font-size:16px;font-weight:400;color:#585957;text-shadow:0 1px 0 rgba(255,255,255,.5);clear:both}
 .article-item .content .copyright{clear:both;background-color:#f8f9f7;padding:15px 20px;line-height:22px;text-shadow:0 1px 0 rgba(255,255,255,.8);font-size:12px;color:#787977}
 .article-item .content .copyright .f-toe{overflow:hidden;word-wrap:normal!important;white-space:nowrap;text-overflow:ellipsis}

@@ -14,7 +14,7 @@ $(function () {
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();
-    /**L2Dwidget.init({
+    L2Dwidget.init({
         "model": {
             jsonPath: "https://cdn.jsdelivr.net/gh/xiazeyu/live2d-widget-models/packages/live2d-widget-model-tororo/assets/tororo.model.json",
             "scale": 1
@@ -34,7 +34,7 @@ $(function () {
             "opacityDefault": 0.85,
             "opacityOnHover": 0.2
         }
-    });**/
+    });
     setTimeout(function(){
         $(".fa-macos").addClass("fa-apple").removeClass("fa-macos");
         var OriginTitile = document.title;
