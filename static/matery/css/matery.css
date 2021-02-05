@@ -26,6 +26,7 @@
         .V-title-top{zoom: 1}
         .V-img-link img{zoom :0.8}
         #live2dcanvas{zoom: 0.6;}
+        #searchModal{width: 75% !important;}
     }
 
 /*大屏幕下(桌面类)的样式*/
