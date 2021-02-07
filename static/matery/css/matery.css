@@ -10,7 +10,6 @@
         zoom: 0.7;
     } 
     footer .info img{zoom:0.7} 
-    .V-icp p{font-size: 10px !important}
     #searchModal{width: 80% !important;}
 }
 
@@ -25,7 +24,7 @@
         .m-V-title{zoom: 1}
         .V-title-top{zoom: 1}
         .V-img-link img{zoom :0.8}
-        #live2dcanvas{zoom: 0.6;}
+        #live2dcanvas{zoom: 0.6 !important;}
         #searchModal{width: 80% !important;}
     }
 
@@ -62,6 +61,9 @@ body {
 }
 a:hover{
     cursor: url(https://cdn.vino.run/img/Vino_2021-02-01-22-17-2.ico), default !important;
+}
+#live2dcanvas{
+    zoom: 0.7;
 }
 #particles-js {
     position: fixed;
@@ -843,6 +845,7 @@ header .go-back i {
     overflow: hidden;
     background-position: center center;
     background-size: cover;
+    transition: all .5s;
     transform: translate3d(0px, 0px, 0px);
 }
 
@@ -1223,6 +1226,7 @@ article .article-content .summary {
 
 article .article-content .publish-author {
     float: right;
+    transition: all .3s;
 }
 
 .publish-date .icon-date {
@@ -1701,7 +1705,8 @@ thead {
         #toc-content a:hover{
             text-decoration: underline;
             color: #0f9d58;
-            box-shadow: 0 0 8px 3px rgba(0, 0, 0, .12)
+            box-shadow: 0 0 8px 3px rgba(0, 0, 0, .12);
+            font-size: 17px;
         }
 
         #toc-content ul{
@@ -2368,7 +2373,7 @@ thead {
 
 /*尾部样式*/
 footer {
-    padding-bottom: 1px;
+    padding-bottom: 20px;
 }
 
 footer .social-statis {
@@ -2391,7 +2396,7 @@ footer .copy-right {
 
 #searchModal {
     min-height: 500px;
-    width: 66%;
+    width: 73%;
     background-color: rgba(255,255,255,0.8);
     border-radius:12px;
 }
@@ -2556,51 +2561,6 @@ footer .copy-right {
     overflow: hidden;
 }
 
-/* styles for '...' */
-.block-with-text {
-    /* hide text if it more than N lines  */
-    overflow: hidden;
-    /* for set '...' in absolute position */
-    position: relative;
-    /* use this value to count block height */
-    line-height: 1.5em;
-    /* max-height = line-height (1.2) * lines max number (3) */
-    max-height: 4.5em;
-    /* fix problem when last visible word doesn't adjoin right side  */
-    text-align: justify;
-    /* place for '...' */
-    margin-right: -1em;
-    padding-right: 1em;
-}
-
-/* create the ... style */
-.block-with-text:before {
-    /* points in the end */
-    content: '...';
-    /* absolute position */
-    position: absolute;
-    /* set position to right bottom corner of block */
-    right: 0.2em;
-    bottom: 0;
-}
-
-/* hide ... if we have text, which is less than or equal to max lines */
-.block-with-text:after {
-    /* points in the end */
-    content: '';
-    /* absolute position */
-    position: absolute;
-    /* set position to right bottom corner of text */
-    right: 0;
-    /* set width and height */
-    width: 1em;
-    height: 1em;
-    /* fix the problem of hidden failure */
-    margin-top: 0.4em;
-    /* bg color = bg color under block */
-    background: white;
-}
-
 /*二级菜单*/
 
 .nav-menu {
@@ -2759,6 +2719,7 @@ footer .copy-right {
     padding: 4px 6px 4px 4px;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
+    color: #fff !important;
 }
 .V-icp{
     position: relative;text-align: center;top: 146px
@@ -3018,6 +2979,7 @@ footer .copy-right {
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
     display: inline-block;
+    color: #fff !important;
 }
 .V-title span:first-child {
     -webkit-animation: bop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate;
