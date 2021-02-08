@@ -2375,7 +2375,7 @@ thead {
 
 /*尾部样式*/
 footer {
-    padding-bottom: 20px;
+    padding-bottom: 0;
 }
 
 footer .social-statis {
@@ -2724,29 +2724,11 @@ footer .copy-right {
     border-bottom-right-radius: 4px;
     color: #fff !important;
 }
-.V-icp{
-    position: relative;text-align: center;top: 146px
-}
-.V-icp p{
-    font-family: Georgia,'Noto Serif SC',serif;font-size: 15px;
-}
-.V-icp a{
-    transition: all 0.7s;
-}
-.V-icp a:hover{
-    color: whitesmoke ;
-}
 .container-fixed,.footer-fixed {width:1280px;margin-left:auto;margin-right:auto;position:relative}
 @media screen and (max-width:1366px){.container-fixed,.footer-fixed,.header-fixed{width:90%}}
 .copyright{padding:10px 0 10px 0}
 .copyright .info{position:relative;text-align:center}
-.grid-footer {
-    z-index:100;
-    background: rgba(234,234,234,0);font-size:14px;
-    position:relative;zoom:1;clear:both;line-height:20px;overflow:hidden;
-    font-family: Georgia,'Noto Serif SC', serif;
-    top: 110px;
-}
+
 .copyright p{color:#565755;font-size:13px}
 
 /***轮盘******/
@@ -3365,7 +3347,8 @@ footer .copy-right {
     
 /***********DarkMode***********/
         .page-footer{
-            background-color: rgba(255,255,255,0)
+            background-color: rgba(255,255,255,0);
+            top: 0;
         }
         #vcomments .vat{
             border-radius:3px;
