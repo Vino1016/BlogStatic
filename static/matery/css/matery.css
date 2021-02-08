@@ -3484,7 +3484,7 @@ footer .copy-right {
         .DarkMode #floating-toc-btn .btn-floating
         ,.DarkMode .card-image:before,.DarkMode .article-cover .V-title,
         .DarkMode .card-image:after,.DarkMode .V-title-top,.DarkMode .our-team h3,.DarkMode .new-item-badge
-        ,.DarkMode #vcomments .vtag,.DarkMode .V-badge,.card-content iframe,.DarkMode .tag-chips span,.DarkMode .card .mainV,
+        ,.DarkMode #vcomments .vtag,.DarkMode .V-badge,.DarkMode .card-content iframe,.DarkMode .tag-chips span,.DarkMode .card .mainV,
         .DarkMode .timeline-box .contentC{
             -webkit-filter: brightness(.75)!important;
             filter: brightness(.75)!important;
