@@ -3557,7 +3557,8 @@ footer .copy-right {
             color: #323835;
             background: #c7bcce;
         }
-        .DarkMode .h-color,.DarkMode #searchModal{
+        .DarkMode .h-color,.DarkMode #searchModal,.DarkMode header .menus_item_child:before,
+        .DarkMode header .menus_item_child{
             background: rgba(45,42,52,0.8);
         }
         .DarkMode .other-item li:hover{
