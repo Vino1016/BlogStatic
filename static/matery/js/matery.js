@@ -14,31 +14,27 @@ $(function () {
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();
-    //点击按钮后切换模式
-    function switchNightMode() {
-        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($("body")), setTimeout(
-            function () {
-                (!$("body").hasClass("DarkMode")) ? ($("body").addClass("DarkMode"), localStorage.setItem('isDark','1'), $('#changeMode-top').removeClass("fa-moon").addClass("fa-sun"),$('#modeicon').attr("xlink:href", "#icon-sun")) : ($("body").removeClass(
-                    "DarkMode"), localStorage.setItem('isDark','0'), $('#changeMode-top').removeClass("fa-sun").addClass("fa-moon"),$('#modeicon').attr("xlink:href", "#icon-moon")), setTimeout(function () {
-                    $(".Cuteen_DarkSky").fadeOut(1e3, function () {
-                        $(this).remove()
-                    })
-                }, 2e3)
-            }), 50
-    }
-    function switchNightModeTop() {
-        if ($("body").hasClass("DarkMode")){
-            $("body").removeClass("DarkMode");
-            localStorage.setItem('isDark','0');
-            $('#changeMode-top').removeClass("fa-sun").addClass("fa-moon");
-            $('#modeicon').attr("xlink:href", "#icon-moon");
-        }else {
-            $("body").addClass("DarkMode");
-            localStorage.setItem('isDark','1');
-            $('#changeMode-top').removeClass("fa-moon").addClass("fa-sun");
-            $('#modeicon').attr("xlink:href", "#icon-sun");
+    L2Dwidget.init({
+        "model": {
+            jsonPath: "https://cdn.jsdelivr.net/gh/xiazeyu/live2d-widget-models/packages/live2d-widget-model-tororo/assets/tororo.model.json",
+            "scale": 1
+        },
+        "display": {
+            "position": "left",
+            "width": 150,
+            "height": 300,
+            "hOffset": 0,
+            "vOffset": -20
+        },
+        "mobile": {
+            "show": false,
+            "scale": 0.5
+        },
+        "react": {
+            "opacityDefault": 0.85,
+            "opacityOnHover": 0.2
         }
-    }
+    });
 
     //检查当前主题模式和图标是否对应
     function checkNightMode() {
@@ -119,16 +115,6 @@ $(function () {
     let fixFooterPosition = function () {
         $('.content').css('min-height', window.innerHeight - 165);
     };
-    $(".trigger").click(function() {
-        $(".menu").toggleClass("active");
-        if ($('#open').is(':hidden')) {
-            $('#open').show(500);
-            $('#close').hide(500);
-        }else {
-            $('#close').show(500);
-            $('#open').hide(500);
-        }
-    });
     $('#sliderV').click(function(){
         if($('#commentArea1').is(':hidden')){
             $('#commentArea1').fadeIn(400);
@@ -236,3 +222,27 @@ $(function () {
         return fmt;
     }
 });
+function switchNightMode() {
+    $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($("body")), setTimeout(
+        function () {
+            (!$("body").hasClass("DarkMode")) ? ($("body").addClass("DarkMode"), localStorage.setItem('isDark','1'), $('#changeMode-top').removeClass("fa-moon").addClass("fa-sun"),$('#modeicon').attr("xlink:href", "#icon-sun")) : ($("body").removeClass(
+                "DarkMode"), localStorage.setItem('isDark','0'), $('#changeMode-top').removeClass("fa-sun").addClass("fa-moon"),$('#modeicon').attr("xlink:href", "#icon-moon")), setTimeout(function () {
+                $(".Cuteen_DarkSky").fadeOut(1e3, function () {
+                    $(this).remove()
+                })
+            }, 2e3)
+        }), 50
+}
+function switchNightModeTop() {
+    if ($("body").hasClass("DarkMode")){
+        $("body").removeClass("DarkMode");
+        localStorage.setItem('isDark','0');
+        $('#changeMode-top').removeClass("fa-sun").addClass("fa-moon");
+        $('#modeicon').attr("xlink:href", "#icon-moon");
+    }else {
+        $("body").addClass("DarkMode");
+        localStorage.setItem('isDark','1');
+        $('#changeMode-top').removeClass("fa-moon").addClass("fa-sun");
+        $('#modeicon').attr("xlink:href", "#icon-sun");
+    }
+}
