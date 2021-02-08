@@ -1,3 +1,25 @@
+//检查当前主题模式和图标是否对应
+function checkNightMode() {
+    if (localStorage.getItem('isDark') === '1') {
+        $("body").addClass("DarkMode");
+        $('#changeMode-top').removeClass("fa-moon").addClass("fa-sun");
+        $('#modeicon').attr("xlink:href", "#icon-sun");
+    } else if(localStorage.getItem('isDark') === '0'){
+        $("body").removeClass("DarkMode");
+        $('#changeMode-top').removeClass("fa-moon").addClass("fa-sun");
+        $('#modeicon').attr("xlink:href", "#icon-moon");
+    } else if (new Date().getHours() >= 20 || new Date().getHours() < 7)
+    {
+        $("body").addClass("DarkMode");
+        $('#changeMode-top').removeClass("fa-moon").addClass("fa-sun");
+        $('#modeicon').attr("xlink:href", "#icon-sun");
+    } else if (matchMedia('(prefers-color-scheme: dark)').matches) {
+        $("body").addClass("DarkMode");
+        $('#changeMode-top').removeClass("fa-moon").addClass("fa-sun");
+        $('#modeicon').attr("xlink:href", "#icon-sun");
+    }
+}
+checkNightMode();
 $(function () {
     /*菜单切换*/
     $('.sidenav').sidenav();
@@ -14,50 +36,6 @@ $(function () {
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();
-    L2Dwidget.init({
-        "model": {
-            jsonPath: "https://cdn.jsdelivr.net/gh/xiazeyu/live2d-widget-models/packages/live2d-widget-model-tororo/assets/tororo.model.json",
-            "scale": 1
-        },
-        "display": {
-            "position": "left",
-            "width": 150,
-            "height": 300,
-            "hOffset": 0,
-            "vOffset": -20
-        },
-        "mobile": {
-            "show": false,
-            "scale": 0.5
-        },
-        "react": {
-            "opacityDefault": 0.85,
-            "opacityOnHover": 0.2
-        }
-    });
-
-    //检查当前主题模式和图标是否对应
-    function checkNightMode() {
-        if (localStorage.getItem('isDark') === '1') {
-            $("body").addClass("DarkMode");
-            $('#changeMode-top').removeClass("fa-moon").addClass("fa-sun");
-            $('#modeicon').attr("xlink:href", "#icon-sun");
-        } else if(localStorage.getItem('isDark') === '0'){
-            $("body").removeClass("DarkMode");
-            $('#changeMode-top').removeClass("fa-moon").addClass("fa-sun");
-            $('#modeicon').attr("xlink:href", "#icon-moon");
-        } else if (new Date().getHours() >= 20 || new Date().getHours() < 7)
-        {
-            $("body").addClass("DarkMode");
-            $('#changeMode-top').removeClass("fa-moon").addClass("fa-sun");
-            $('#modeicon').attr("xlink:href", "#icon-sun");
-        } else if (matchMedia('(prefers-color-scheme: dark)').matches) {
-            $("body").addClass("DarkMode");
-            $('#changeMode-top').removeClass("fa-moon").addClass("fa-sun");
-            $('#modeicon').attr("xlink:href", "#icon-sun");
-        }
-    }
-    checkNightMode();
     setTimeout(function(){
         var OriginTitile = document.title;
         var titleTime;
@@ -225,6 +203,27 @@ $(function () {
             if(new RegExp("("+ k +")").test(fmt))
                 fmt = fmt.replace(RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length)));
         return fmt;
+    }
+});
+L2Dwidget.init({
+    "model": {
+        jsonPath: "https://cdn.jsdelivr.net/gh/xiazeyu/live2d-widget-models/packages/live2d-widget-model-tororo/assets/tororo.model.json",
+        "scale": 1
+    },
+    "display": {
+        "position": "left",
+        "width": 150,
+        "height": 300,
+        "hOffset": 0,
+        "vOffset": -20
+    },
+    "mobile": {
+        "show": false,
+        "scale": 0.5
+    },
+    "react": {
+        "opacityDefault": 0.85,
+        "opacityOnHover": 0.2
     }
 });
 function switchNightMode() {
