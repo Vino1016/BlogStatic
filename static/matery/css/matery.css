@@ -52,7 +52,7 @@ body,html{
     cursor: url(https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/left_ptr.png), default !important;
 }
 body {
-    background-color: #fff;
+    background-color: #f8f9f9;
     margin: 0;
     color: #34495e;
     overflow-x: hidden;
