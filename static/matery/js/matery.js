@@ -46,7 +46,7 @@ $(function () {
             $("body").removeClass("DarkMode");
             $('#changeMode-top').removeClass("fa-moon").addClass("fa-sun");
             $('#modeicon').attr("xlink:href", "#icon-moon");
-        } else if (new Date().getHours() >= 0)
+        } else if (new Date().getHours() >= 20 || new Date().getHours() < 7)
         {
             $("body").addClass("DarkMode");
             $('#changeMode-top').removeClass("fa-moon").addClass("fa-sun");
