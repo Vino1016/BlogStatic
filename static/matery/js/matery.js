@@ -127,6 +127,11 @@ $(function () {
             $('#commentArea2').slideUp(400);
         }
     });
+    $(".menu-V .toggle").on("click", (function() {
+        $(".menu-V").toggleClass("expanded"),
+        $(".menu-V a").toggleClass("hidden"),
+        $(".menu-V .container-M , .toggle").toggleClass("close")
+    }));
     /**
      * 修复样式.
      */
