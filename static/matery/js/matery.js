@@ -5,8 +5,6 @@ function checkNightMode() {
         $('#changeMode-top').removeClass("fa-moon").addClass("fa-sun");
         $('#modeicon').attr("xlink:href", "#icon-sun");
     } else if(localStorage.getItem('isDark') === '0'){
-        $("body").removeClass("DarkMode");
-        $('#changeMode-top').removeClass("fa-moon").addClass("fa-sun");
         $('#modeicon').attr("xlink:href", "#icon-moon");
     } else if (new Date().getHours() >= 20 || new Date().getHours() < 7)
     {
@@ -17,6 +15,8 @@ function checkNightMode() {
         $("body").addClass("DarkMode");
         $('#changeMode-top').removeClass("fa-moon").addClass("fa-sun");
         $('#modeicon').attr("xlink:href", "#icon-sun");
+    }else{
+        $('#modeicon').attr("xlink:href", "#icon-moon");
     }
 }
 checkNightMode();
