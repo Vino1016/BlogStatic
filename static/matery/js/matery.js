@@ -36,27 +36,6 @@ $(function () {
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();
-    L2Dwidget.init({
-        "model": {
-            jsonPath: "https://cdn.jsdelivr.net/gh/xiazeyu/live2d-widget-models/packages/live2d-widget-model-tororo/assets/tororo.model.json",
-            "scale": 1
-        },
-        "display": {
-            "position": "left",
-            "width": 150,
-            "height": 300,
-            "hOffset": 0,
-            "vOffset": -20
-        },
-        "mobile": {
-            "show": false,
-            "scale": 0.5
-        },
-        "react": {
-            "opacityDefault": 0.85,
-            "opacityOnHover": 0.2
-        }
-    });
     setTimeout(function(){
         var OriginTitile = document.title;
         var titleTime;
@@ -225,6 +204,27 @@ $(function () {
                 fmt = fmt.replace(RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length)));
         return fmt;
     }
+    L2Dwidget.init({
+        "model": {
+            jsonPath: "https://cdn.jsdelivr.net/gh/xiazeyu/live2d-widget-models/packages/live2d-widget-model-tororo/assets/tororo.model.json",
+            "scale": 1
+        },
+        "display": {
+            "position": "left",
+            "width": 150,
+            "height": 300,
+            "hOffset": 0,
+            "vOffset": -20
+        },
+        "mobile": {
+            "show": false,
+            "scale": 0.5
+        },
+        "react": {
+            "opacityDefault": 0.85,
+            "opacityOnHover": 0.2
+        }
+    });
 });
 function switchNightMode() {
     $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($("body")), setTimeout(
